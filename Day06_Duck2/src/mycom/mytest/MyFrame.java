@@ -44,6 +44,8 @@ public class MyFrame extends Frame {
 	public void paint(Graphics g) {
 		for(Duck d : arr) { //업캐스팅된 상태: 자식이 확장한 것은 안보인다.
 			d.display(g); //업캐스팅을 했더라도 자식의 함수에 접근 가능하다. 모든 자식을 한꺼번에 제어 가능.
+			d.swim(g);
+			d.quack(g);
 		}
 	}
 	
