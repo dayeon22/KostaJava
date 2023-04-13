@@ -3,11 +3,16 @@ package mycom.mytest.duck;
 import java.awt.Graphics;
 import java.util.Random;
 
+//싱글톤 패턴으로 변환하여 DuckManager 객체가 단 하나만 생성되도록 하기
 public class DuckManager {
-
+	private static DuckManager mgr = new DuckManager(); //내부에서 객체 생성. static이기 때문에 단 하나만 생성 가능
 	Duck[] arr = new Duck[20];
 	
-	public DuckManager() {
+	public static DuckManager getInstance() { //외부로 객체 전달
+		return mgr;
+	}
+	
+	private DuckManager() { //외부에서 객체생성을 하지 못하게 막음
 		makeDucks();
 	}
 	

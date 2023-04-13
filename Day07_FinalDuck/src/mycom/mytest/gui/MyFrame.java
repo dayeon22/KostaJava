@@ -9,7 +9,7 @@ public class MyFrame extends Frame {
 	public static final int FRAME_WIDTH = 800;
 	public static final int FRAME_HEIGHT = 600;
 	
-	DuckManager mgr = new DuckManager();
+	DuckManager mgr = DuckManager.getInstance();
 	
 	public MyFrame() {
 		this.setSize(MyFrame.FRAME_WIDTH, MyFrame.FRAME_HEIGHT);
