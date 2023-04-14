@@ -1,0 +1,6 @@
+Hello World!
+안녕하세요
+한글도 되는지 궁금합니다.
+
+Life is too short
+you need python
